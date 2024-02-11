@@ -1,0 +1,93 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+h1 {
+    color : white;
+}
+body {
+    /* background-color: aqua; */
+        background-image: url(/tic-tac-toe.jpeg) ;
+         background-size: cover ; 
+}
+
+.container {
+    height : 60vh;
+}
+
+.game {
+    height : 60vmin;
+    width : 60vmin;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Box {
+    background-color: blueviolet;
+    color : linear-gradient(0deg, blue, green 40%, red);
+    font-size : 3rem;
+    margin : 3px;
+    height : 100px;
+    width : 100px;
+    border-radius: 10px;
+    border : none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.667);
+    cursor : pointer;
+    transition : all 1s linear 0.2s;
+}
+
+.Box:hover {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.615);
+}
+
+.msg {
+    color : white;
+    font-size : 20px;
+}
+
+.reset {
+    height : 34px;
+    width : 100px;
+    background-color : transparent;
+    color : white;
+    border : 1px solid lightblue;
+    border-radius: 5px;
+    cursor : pointer;
+    transition: all 2s linear 0.2;
+}
+
+.newgame {
+    height : 34px;
+    width : 100px;
+    background-color : transparent;
+    color : white;
+    border : 1px solid lightblue;
+    border-radius: 5px;
+    cursor : pointer;
+    transition: all 2s linear 0.2;
+}
+
+.hide {
+    display : none;
+}
+
+main .newgame:hover {
+    background-color: rgb(0, 166, 255);
+    
+}
+
+main .reset:hover {
+    background-color: rgb(0, 166, 255);
+}
+
+@media((min-width:400px) and (max-width : 700px)) {
+    .game {
+        height : 60vh;
+    }
+    .Box {
+        height : 60px;
+        width : 60px;
+        margin-top : 0px;
+    }
+}
